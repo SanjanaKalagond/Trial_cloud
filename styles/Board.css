@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #2e3a59;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1d3557;
+}
+
+/* Container Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(29, 53, 87, 0.1);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a8dadc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  background-color: #457b9d;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
+
+/* Kanban Board Columns */
+.board-column {
+  background-color: #e0ecf8;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  min-height: 500px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.board-column h2 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+/* Draggable Task Card */
+.task-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(29, 53, 87, 0.15);
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.task-card h4 {
+  margin: 0 0 10px;
+  color: #1d3557;
+}
+
+.task-card input[type="checkbox"] {
+  margin-right: 8px;
+}
+/* Layout for Columns Wrapper */
+.board-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Enhanced Column Styling */
+.board-column {
+  background-color: #f7f9fc;
+  border: 2px solid #a8dadc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 320px;
+  min-height: 520px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.board-column:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Task Cards */
+.task-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(29, 53, 87, 0.15);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+/* Bigger Checkbox */
+.task-card input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.form-center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+}
+
+.form-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.fc {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/* === Calendar Styles (moved from Calendar.css) === */
+
+.fc {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fc-daygrid-event {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.fc-daygrid-event-dot {
+  display: none;
+}
+
+.fc-daygrid-day-number {
+  color: #333;
+}
+
+.fc-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.fc-button:hover {
+  background-color: #0056b3;
+}
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.board-title {
+  text-align: center;
+  flex: 1;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logout-button {
+  padding: 8px 12px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-bar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-task-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task-bar button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.board-column {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.calendar-link {
+  margin-top: 20px;
+  text-align: center;
+}
+.theme-toggle {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* globals.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme */
+.light {
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text */
+}
+
+.light .board-column {
+  background-color: #fff; /* White for columns */
+  border: 1px solid #ddd; /* Light border for columns */
+}
+
+.light .task-card {
+  background-color: #fff; /* White task cards */
+  color: #333; /* Dark text inside task cards */
+}
+
+/* Dark theme */
+.dark {
+  background-color: #1e2a47; /* Dark blue background */
+  color: white; /* White text */
+}
+
+.dark .board-column {
+  background-color: #2a3a6e; /* Darker background for columns */
+  border: 1px solid #5f6c9b; /* Lighter border for columns */
+}
+
+.dark .task-card {
+  background-color: #333; /* Dark task cards */
+  color: white; /* White text inside task cards */
+}
+
+button {
+  background-color: #4b6db2;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6c8fd6;
+}

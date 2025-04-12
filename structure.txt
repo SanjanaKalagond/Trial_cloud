@@ -1,0 +1,28 @@
+/kanban-board
+│
+├── /components
+│   ├── Column.js          # Column component for ToDo, InProgress, Completed
+│   ├── TaskCard.js        # Task component inside columns
+│   ├── UserProfile.js     # Displays user info (email/avatar)
+│   ├── ThemeToggle.js     # Button for theme switching
+│
+├── /pages
+│   ├── /api               # API routes (optional, for Firebase Firestore integration)
+│   ├── _app.js            # App wrapper to handle global state (theme, auth)
+│   ├── dashboard.js       # Main dashboard page
+│   ├── index.js           # Login page
+│   ├── signup.js          # Sign-up page
+│   ├── calendar.js        # Calendar page
+│
+├── /styles
+│   ├── globals.css        # Global styles (for light/dark theme)
+│   ├── Board.css          # Kanban board specific styles (can be renamed)
+│
+├── /firebase              # Firebase configuration & utilities
+│   ├── firebaseConfig.js  # Firebase SDK configuration
+│   ├── firestore.js       # Functions for Firestore (add, update, get tasks)
+│
+├── .gitignore             # Git ignore
+├── package.json           # Project dependencies
+├── next.config.js         # Next.js config
+└── README.md              # Project info
